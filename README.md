@@ -1,1 +1,1 @@
-# wsbounds
+# frechet_bounds
