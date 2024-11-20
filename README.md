@@ -8,10 +8,6 @@ Welcome to our GitHub repository! Here you will find more information about our 
 
 Programmatic Weak Supervision (PWS) enables supervised model training without direct access to ground truth labels by leveraging weak labels from heuristics, crowdsourcing, or pre-trained models. However, evaluating these models is challenging because traditional metrics such as accuracy, precision, and recall require labeled data. This repository introduces our implementation of a novel method for evaluating weakly supervised models by framing the task as a **partial identification problem**. Using Fréchet bounds, we estimate reliable performance bounds for key metrics—such as accuracy, precision, recall, and F1-score—without requiring labeled data. Our approach leverages scalable convex optimization to compute these bounds efficiently, even in high-dimensional settings. This framework provides a robust and practical solution for assessing model quality in weak supervision scenarios, overcoming core limitations in existing evaluation techniques.
 
-##  Quick start
-
-Please check our [demo](https://github.com/felipemaiapolo/wsbounds/blob/main/notebooks/demo.ipynb) on how to use our method to evaluate a classifier trained using PWS to hate speech detection.
-
 ## Installation
 
 To use the code in this repository, clone the repo and create a conda environment using:
@@ -20,6 +16,11 @@ To use the code in this repository, clone the repo and create a conda environmen
 conda env create -f wsbounds.yml
 source activate wsbounds
 ```
+
+##  Quick start
+
+Please check our [demo](https://github.com/felipemaiapolo/wsbounds/blob/main/notebooks/demo.ipynb) on how to use our method to evaluate a classifier trained using PWS to hate speech detection.
+
 
 ## Reproducing results from the paper
 
