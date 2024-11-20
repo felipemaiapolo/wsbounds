@@ -13,8 +13,8 @@ Programmatic Weak Supervision (PWS) enables supervised model training without di
 To use the code in this repository, clone the repo and create a conda environment using:
 
 ```
-conda env create -f wsbounds.yaml
-source activate wsbounds
+conda env create --file=wsbounds.yaml
+conda activate wsbounds
 ```
 
 ##  Quick start
