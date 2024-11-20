@@ -1,7 +1,8 @@
 import torch 
 import numpy as np
 from scipy.stats import norm
-from .utils import GetGradNorm, OneHotEncode
+try: from .utils import GetGradNorm, OneHotEncode
+except ImportError: from utils import GetGradNorm, OneHotEncode
 
 def BoundExpectation(bound, tensor, Z, set_Z, P_Y_Z, conf, epsilon, tol, max_epochs, device, verbose=False):
     
