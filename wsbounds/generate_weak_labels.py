@@ -2,10 +2,10 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import json
 import pickle
-from tqdm import tqdm
+from tqdm.auto import tqdm
 
-access_token="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"
-cache_dir="/llmthonskdir/hf_cache/"
+access_token="You HF token here"
+cache_dir="HF cache folder"
 device = "cuda"
 
 model_id = "meta-llama/Llama-2-13b-chat-hf"
@@ -40,7 +40,7 @@ def get_class(resp):
 
 
 
-data = load_data_raw('youtube', folder = 'data/wrench_class')
+data = load_data_raw('youtube', folder = '../data/wrench_class')
 keys = list(data['val'].keys())[:shots]
 
 instruction = 'You should classify the target sentence as "spam" or "ham". If definitions or examples are introduced, you should consider them when classifying sentences. Respond with "spam" or "ham".'

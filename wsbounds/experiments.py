@@ -16,13 +16,14 @@ import math
 from sentence_transformers import SentenceTransformer
 from transformers import RobertaTokenizer, RobertaForSequenceClassification
 from transformers import BertTokenizer, BertForSequenceClassification
-from utils import DefineDevice, FindRowIndex, GetP_Y_Z, SuppressPrints
-from models import LogReg, TrainModelCI, CIRisk, GetLogLossTensor, MLP, TrainMLP
 from scipy.stats import norm
 from label_functions import *
-from eval_pws import EvalPWS, GetAccuracyTensor, GetPRFTensor
 from wrench.labelmodel.flyingsquid import FlyingSquid
 from snorkel.labeling.model import LabelModel
+
+from .utils import DefineDevice, FindRowIndex, GetP_Y_Z, SuppressPrints
+from .models import LogReg, TrainModelCI, CIRisk, GetLogLossTensor, MLP, TrainMLP
+from .eval_pws import EvalPWS, GetAccuracyTensor, GetPRFTensor
 
 #python experiments.py --exp1 --exp2 --exp3 --exp4
 
