@@ -19,9 +19,15 @@ from label_functions import *
 from wrench.labelmodel.flyingsquid import FlyingSquid
 from snorkel.labeling.model import LabelModel
 
-from .utils import DefineDevice, FindRowIndex, GetP_Y_Z, SuppressPrints
-from .models import LogReg, TrainModelCI, CIRisk, GetLogLossTensor, MLP, TrainMLP
-from .eval_pws import EvalPWS, GetAccuracyTensor, GetPRFTensor
+try:
+           from .utils import DefineDevice, FindRowIndex, GetP_Y_Z, SuppressPrints
+           from .models import LogReg, TrainModelCI, CIRisk, GetLogLossTensor, MLP, TrainMLP
+           from .eval_pws import EvalPWS, GetAccuracyTensor, GetPRFTensor
+except ImportError:
+           from utils import DefineDevice, FindRowIndex, GetP_Y_Z, SuppressPrints
+           from models import LogReg, TrainModelCI, CIRisk, GetLogLossTensor, MLP, TrainMLP
+           from eval_pws import EvalPWS, GetAccuracyTensor, GetPRFTensor
+
 
 #python experiments.py --exp1 --exp2 --exp3 --exp4
 
