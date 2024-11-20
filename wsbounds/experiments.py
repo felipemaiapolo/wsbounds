@@ -1,11 +1,9 @@
 from tqdm.auto import tqdm
-import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import pickle
 import pandas as pd
 from os import walk
-import matplotlib.pyplot as plt
 import os
 import argparse
 import random
