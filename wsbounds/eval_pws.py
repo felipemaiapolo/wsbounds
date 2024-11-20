@@ -1,7 +1,11 @@
 import torch
 import numpy as np
-from .bound_expectation import BoundExpectation
-from .utils import *
+try:
+    from .bound_expectation import BoundExpectation
+    from .utils import *
+except ImportError:
+    from bound_expectation import BoundExpectation
+    from utils import *
 
 def ztn(x): #zero to nan
     if x==0:return np.nan
