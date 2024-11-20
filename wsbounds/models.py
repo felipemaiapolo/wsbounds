@@ -1,6 +1,9 @@
 import torch
 from torch import nn
-from .utils import *
+try:
+           from .utils import *
+except ImportError:
+           from utils import *
 
 ### loss
 def GetLogLossTensor(model, X):
