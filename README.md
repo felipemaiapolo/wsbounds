@@ -25,7 +25,8 @@ Please check our [demo](https://github.com/felipemaiapolo/wsbounds/blob/main/not
 ## Reproducing results from the paper
 
 1. Please download [Wrench](https://github.com/JieyuZ2/wrench) data from [wrench_class.zip](https://drive.google.com/file/d/1m0vdbFiLmdL-IlTL6r0ewhAmub2s1Cuo/view?usp=sharing), unzip the folder, and place it inside the data folder. The data in `wrench_class` is processed using `wsbounds/process_data.py` in case you need to re-process it.
-2. Run `python experiments.py --exp1 --exp2 --exp3 --exp4` to re-run all experiments and the plots are generated using the notebooks inside the folder `notebooks`. The file `experiments.py` can be found inside the `wsbounds` folder. In case, you need to re-generate the weak labels for the `spam` experiment, please take a look at `wsbounds/generate_weak_labels.py`.
+2. Please clone `https://github.com/Vicomtech/hate-speech-dataset.git` into the data folder.
+3. Run `python experiments.py --exp1 --exp2 --exp3 --exp4` to re-run all experiments and the plots are generated using the notebooks inside the folder `notebooks`. The file `experiments.py` can be found inside the `wsbounds` folder. In case, you need to re-generate the weak labels for the `spam` experiment, please take a look at `wsbounds/generate_weak_labels.py`.
 
 
 ## Citing
